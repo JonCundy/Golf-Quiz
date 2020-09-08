@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="quizBackground">
+                    <h1 class=" text-center"> What Type of Golfer Are You?</h1>
+            <div id="questionArea">
+                
+              <div id="intro">
+                    <h2>Answer the following questions to find out what type of golfer you are.</h2>
+                    <input type="button" value="Start Quiz" Class="btn btn-success text-center" onclick="startQuiz()"/>   
+                </div>
+                
+                <form id="quizForm">
+                <div id="question1">
+                  <h2>You hit your first tee shot in to the trees, how do you react?</h2>
+                    <div>
+                      <input type="radio" name="quest1" id="a1" value=1 />
+                      <label for="a1">a) You blame all you playing partners for what has just happened</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="quest1" id="a2" value=2 />
+                      <label for="a2">b) You simply laugh it off.</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="quest1" id="a3" value=3  />
+                      <label for="a3">c) You tell everyone you know precisely what you did wrong.</label>
+                    </div>
+                    <div>
+                      <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question2()"/>
+                    </div>  
+                </div>    
+                    
+                    <div id="question2">
+                        <div>
+                            <h2>Your ball lands behind a rock, how do you react?</h2>
+                        </div>                 
+                        <div>
+                          <input type="radio" name="quest2" id="a1" value=1 />
+                          <label for="a1">a) You cannot believe how unlucky you are... Why always Me.</label>
+                        </div>
+                        <div>
+                          <input type="radio" name="quest2" id="a2" value=2 />
+                          <label for="a2">b) You just get on with it.</label>
+                        </div>
+                        <div>
+                          <input type="radio" name="quest2" id="a3" value=3  />
+                          <label for="a3">c) Explain the precise rule which means you can get a free drop or move the rock.</label>
+                        </div>
+                        <div>
+                          <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question3()"/>
+                        </div>  
+                     </div>
+
+
+                  <div id="question3">
+                    <div>
+                        <h2>Your playing partner acidently moves their ball, what do you do?</h2>
+                    </div>
+                    
+                    <div>
+                      <input type="radio" name="quest3" id="a1" value=1 />
+                      <label for="a1">a) You instantly call them a cheat.</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="quest3" id="a2" value=2 />
+                      <label for="a2">b) Tell them it does not matter and to just carry on.</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="quest3" id="a3" value=3  />
+                      <label for="a3">c) Imediately explain that they will need to take a 1 shot penalty.</label>
+                    </div>
+                    <div>
+                      <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question4()"/>
+                    </div>  
+                   </div> 
+
+                    <div id="question4">
+                        <div>
+                            <h2 class=>What drink do you take on the course?</h2>
+                        </div>
+                        
+                        <div>
+                          <input type="radio" name="quest4" id="a1" value=1 />
+                          <label for="a1">a) Energy Drink [eg Red Bull]</label>
+                        </div>
+                        <div>
+                          <input type="radio" name="quest4" id="a2" value=2 />
+                          <label for="a2">b) Beer</label>
+                        </div>
+                        <div>
+                          <input type="radio" name="quest4" id="a3" value=3  />
+                          <label for="a3">c) Isotonic Sports Drink</label>
+                        </div>
+                        <div>
+                          <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question5()"/>
+                        </div>  
+                    </div>
+
+                        <div id="question5">
+                            <div>
+                                <h2 class=>You miss a short put on the last to beat your lowest ever score, how do you react?</h2>
+                            </div>
+                            
+                            <div>
+                              <input type="radio" name="quest5" id="a1" value=1 />
+                              <label for="a1">a) Your throw your clubs in the lake.</label>
+                            </div>
+                            <div>
+                              <input type="radio" name="quest5" id="a2" value=2 />
+                              <label for="a2">b) You just sheke hands with your playing partners and enjoy a beer in the club house</label>
+                            </div>
+                            <div>
+                              <input type="radio" name="quest5" id="a3" value=3  />
+                              <label for="a3">c) You tell everyone how this has impacted your handicap.</label>
+                            </div>
+                            <div>
+                              <input type="button" value="Results"class="btn btn-success mx-auto" onclick="results()"/>
+                            </div>  
+                        </div>
+                </form>
+                <div id="results">
+                    <h2>Based on your answers we calculate that the type of golfer that best describes you is:</h2>
+                    <br /><br />
+                    <p class="text-center" id="result"></p>
+                  </div>
+
+            </Div>
+        </div>
+        <script src="GolfQuiz.mjs" type="text/javascript"></script>
+    </body>
+</html>

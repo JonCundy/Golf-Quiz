@@ -1,0 +1,32 @@
+body {
+    
+    background-image: url(Golf-image.jpeg);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;
+    color: rgb(235, 8, 8);
+}
+
+
+
+#question1, #question2, #question3, #question4, #question5, #results {
+    justify-content: center;
+    width: 750px;
+    display: none;
+    
+}
+
+
+#questionArea {
+    
+    position: absolute;
+    margin: auto;        
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    border-radius: 10px;
+}
